@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('asset/wp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "Ganyu Ganyu"
+        "HuTao HuTao"
+        "Eula Eula"
+        "Yelan Yelan"
+        "Raiden Shogun Raiden Shogun"
+        "JeanBarbara JeanBarbara"
+        "Furina Furina"
+        "Archellino Archellino";
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.Ganyu, .Hutao, .Eula, .Yelan, .RaidenShogun, .JeanBarbara, .Ayaka, .Keqing, .Furina, .Archellino {
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+}
+
+.Ganyu { background-image: url('asset/Ganyu.jpg'); }
+.Hutao { background-image: url('asset/Hutao.jpg'); }
+.Eula { background-image: url('asset/Eula.jpg'); }
+.Yelan { background-image: url('asset/Yelan.jpg'); }
+.Ayaka { background-image: url('asset/Ayaka.jpg'); }
+.RaidenShogun { background-image: url('asset/RaidenShogun.jpg'); }
+.Keqing { background-image: url('asset/Keqing.jpg'); }
+.JeanBarbara { background-image: url('asset/JeanBarbara.jpg'); }
+.Furina { background-image: url('asset/Furina.jpg'); }
+.Archellino { background-image: url('asset/Archellino.jpeg'); }
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+@keyframes changeSliderColor {
+    0% { background-color: #FF8C00; }
+    50% { background-color: #32CD32; }
+    100% { background-color: #FF8C00; }
+}
